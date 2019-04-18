@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--<solid android:color="#E370F7"/>-->
+    <size android:height="10dp"
+        android:width="100dp"/><!--kích thước-->
+    <corners android:radius="30dp"/><!-- bo viền tròn-->
+    <stroke android:width="5dp" android:color="#CDDC39"/> <!--màu viền và độ rộng đườn bo-->
+   <padding android:left="10dp"
+       android:right="10dp"
+
+       android:top="10dp"
+       android:bottom="10dp"/> <!--căn chỉnh khoản cách phần tử-->
+
+</shape>

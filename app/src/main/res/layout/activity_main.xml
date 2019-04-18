@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDA520"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imthoat"
+            android:layout_width="150px"
+            android:layout_height="150px"
+            android:src="@drawable/thoat" />
+
+        <LinearLayout
+            android:layout_width="114dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="255dp"
+            android:background="@drawable/res_button"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_diem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#F1F1E5"
+                android:textSize="25sp"/>
+
+            <ImageView
+                android:layout_width="36dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/rub" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dhbc" />
+
+        <Button
+            android:id="@+id/btnPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/re_buttongame"
+            android:text="Chơi Ngay"
+            android:textColor="#09AFFA"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnRuby"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/re_buttongame"
+            android:text="Kiếm Ruby"
+            android:textColor="#09AFFA"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tvhien"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imlike"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/like1" />
+
+        <ImageView
+            android:id="@+id/imshare"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:src="@drawable/share" />
+
+        <CheckBox
+            android:id="@+id/ckamthanh"
+            android:layout_width="2dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:button="@drawable/hinhamthanh" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

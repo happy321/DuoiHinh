@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#80CEDA2D"
+    tools:context=".Main4Activity">
+
+    <ImageView
+        android:id="@+id/imgAnh"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ketthuc" />
+    <TextView
+        android:id="@+id/ivcau"
+        android:layout_below="@+id/imgAnh"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn là thiên tài"
+        android:textColor="#2196F3"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/tvhet"
+        android:layout_below="@+id/ivcau"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hết câu hỏi rồi !!"
+        android:textColor="#2196F3"
+        android:textSize="30sp"/>
+    <Button
+        android:id="@+id/btnGamekhac"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tvhet"
+        android:background="@drawable/re_buttongame"
+        android:text="Game khác"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"/>
+    <Button
+        android:id="@+id/btnThoatGame"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/btnGamekhac"
+        android:background="@drawable/re_buttongame"
+        android:text="Thoát"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

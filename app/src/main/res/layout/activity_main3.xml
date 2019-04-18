@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main3Activity"
+    android:background="#4DE2A43A">
+      <ImageView
+          android:layout_marginTop="5dp"
+          android:id="@+id/imA"
+          android:layout_centerHorizontal="true"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cuoit"/>
+
+    <TextView
+        android:layout_below="@+id/imA"
+        android:layout_marginTop="10dp"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:id="@+id/chuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chúc Mừng"
+        android:textColor="#0974E2"/>
+    <TextView
+        android:layout_below="@+id/chuc"
+        android:layout_marginTop="5dp"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:id="@+id/dap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="đáp án:"
+        android:textColor="#0974E2"/>
+
+    <TextView
+        android:textColor="#EE930D"
+        android:gravity="center"
+        android:id="@+id/tvdapan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dap"
+        android:textSize="55sp"/>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvdapan"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 5"
+            android:textColor="#E60B3D"
+            android:textSize="45sp" />
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+             android:src="@drawable/rub"
+            android:layout_width="60dp"
+            android:layout_height="60dp" />
+    </LinearLayout>
+    <Button
+        android:textSize="20sp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:id="@+id/btnTiep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="chơi tiếp"
+         android:background="@drawable/re_buttongame"
+        android:layout_below="@+id/tvdapan"/>
+    <Button
+        android:textSize="20sp"
+         android:layout_marginTop="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnThoat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="thoát"
+        android:background="@drawable/re_buttongame"
+        android:layout_below="@id/btnTiep"/>
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
